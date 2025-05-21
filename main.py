@@ -3,6 +3,8 @@ from pydantic import BaseModel
 from transformers import BartTokenizer, BartForConditionalGeneration
 import torch
 
+# command: uvicorn main:app --reload
+# Go to http://127.0.0.1:8000/docs to go to swagger UI
 app = FastAPI()
 
 model_name = "facebook/bart-large-cnn"
